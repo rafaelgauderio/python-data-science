@@ -16,6 +16,8 @@ print(Professors)
 del Professors[3]
 print(Professors)
 
+# to use methods = 
+# name of the object, dot operator, name of the method, parentheses 
 ## append in the end of the list
 Professors.append('Joao')
 Professors.append('Larissa')
