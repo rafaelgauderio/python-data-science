@@ -18,4 +18,6 @@ yRegression = 102200 + 222.9402*x;
 figure = pt.plot(x,yRegression, lw=2, c='orange', label='regression line')
 pt.xlabel('PRICE', fontsize=19)
 pt.ylabel('WEIGHT', fontsize=19)
+pt.xlim(200);
+pt.ylim(100000);
 pt.show();

@@ -28,7 +28,7 @@ plot.ylabel('GPA', fontsize=16);
 plot.show();
 
 # OLS regression results
-
+# Ordinary least squares
 x0= statsmodels.api.add_constant(x);
 results = statsmodels.api.OLS(y,x0).fit();
 print(results.summary());
@@ -40,3 +40,8 @@ figure = plot.plot(x,yReg, lw=4, c='red', label = "regression line")
 plot.xlabel('SAT', fontsize = 15);
 plot.ylabel('GPA', fontsize = 15);
 plot.show();
+
+# error = measures goodness of fit, how weel your model fits your data
+# total variability = explained variability + unexplained variability
+# SST = SSR + SSE
+# R² = SSR/SST
